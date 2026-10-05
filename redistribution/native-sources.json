@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "notices": [
+    {
+      "path": "redistribution/pgsqlparser/LICENSE",
+      "component": "pgsqlparser-dotnet",
+      "revision": "4692e2af5f7957b3d758e64f09f244a4066edf80",
+      "source": "https://raw.githubusercontent.com/mysticmind/pgsqlparser-dotnet/4692e2af5f7957b3d758e64f09f244a4066edf80/LICENSE",
+      "sha256": "661d41c4da7601a039b57e493c5a3a8e4647b43dfc87a54545b2600a4e94a0b7"
+    },
+    {
+      "path": "redistribution/pgsqlparser/libpg_query.LICENSE",
+      "component": "libpg_query",
+      "revision": "a120852539e7998781dbcfbff890363636363cfe",
+      "source": "https://raw.githubusercontent.com/mysticmind/libpg_query/a120852539e7998781dbcfbff890363636363cfe/LICENSE",
+      "sha256": "f9352c20940619a380a5e9f23cebe34d8f797cfbd747fc236a7a3e5fc8ef9b41"
+    },
+    {
+      "path": "redistribution/pgsqlparser/PostgreSQL.COPYRIGHT",
+      "component": "PostgreSQL parser sources",
+      "revision": "a120852539e7998781dbcfbff890363636363cfe",
+      "source": "https://raw.githubusercontent.com/mysticmind/libpg_query/a120852539e7998781dbcfbff890363636363cfe/src/postgres/COPYRIGHT",
+      "sha256": "e3822c4797fadcab31a3fc73f75c28ac20c73d72b565da91e9974cf9398ef4d2"
+    }
+  ],
+  "nativeBinary": {
+    "package": "pgsqlparser",
+    "version": "1.0.0",
+    "asset": "runtimes/win-x64/native/libpg_query.dll",
+    "bytes": 3567104,
+    "sha256": "a1f553464cd0985a7bf73d7ed9d2b2a8aaf915c1b7638fbbc47632cdf31777a7",
+    "upstreamBlob": "0f18ec1bc94787f4c03d4cc86ce9a8831ccc92ec",
+    "upstreamPath": "src/PgSqlParser/Native/win-x64/libpg_query.dll",
+    "claim": "Vendor byte identity only; no reproduced upstream build."
+  }
+}

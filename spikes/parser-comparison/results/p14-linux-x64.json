@@ -1,0 +1,18 @@
+{
+  "rid": "linux-x64",
+  "layout": "self-contained single-file + IncludeNativeLibrariesForSelfExtract=true",
+  "runner": "WSL2",
+  "invariantGlobalizationEnv": "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1",
+  "pgsqlparser": {
+    "publishExit": 0,
+    "p01Exit": 0,
+    "caseAllExit": 0,
+    "nativeLoad": "PASS"
+  },
+  "PostgresQuery": {
+    "publishExit": 0,
+    "p01Exit": 0,
+    "caseAllExit": 0,
+    "nativeLoad": "PASS"
+  }
+}

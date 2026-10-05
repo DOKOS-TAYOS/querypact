@@ -1,0 +1,13 @@
+id: mvp-b-unique-nonnull
+version: "1.0.0"
+requiredProperties:
+  - name: unique
+    column: code
+  - name: non_null
+    column: code
+disclosure:
+  name: strict
+  includePlanSummary: false
+  includeObjectNames: false
+  includeTimings: false
+  includeRowCounts: false

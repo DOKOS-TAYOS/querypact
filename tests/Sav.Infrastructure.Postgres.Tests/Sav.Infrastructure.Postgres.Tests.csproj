@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Testcontainers.PostgreSql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Sav.Application\Sav.Application.csproj" />
+    <ProjectReference Include="..\..\src\Sav.Infrastructure.Config\Sav.Infrastructure.Config.csproj" />
+    <ProjectReference Include="..\..\src\Sav.Infrastructure.Postgres\Sav.Infrastructure.Postgres.csproj" />
+    <ProjectReference Include="..\..\src\Sav.Infrastructure.Storage\Sav.Infrastructure.Storage.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+</Project>

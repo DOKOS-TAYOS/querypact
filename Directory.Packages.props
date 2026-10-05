@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Official MCP C# SDK is GA; pin stable version for Host/MCP milestones. -->
+    <PackageVersion Include="ModelContextProtocol" Version="1.4.1" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.7" />
+    <PackageVersion Include="System.CommandLine" Version="2.0.10" />
+    <PackageVersion Include="YamlDotNet" Version="16.3.0" />
+    <!-- Chosen parser (ADR 0002 / M002c): production via Sav.Infrastructure.Postgres. -->
+    <PackageVersion Include="pgsqlparser" Version="1.0.0" />
+    <PackageVersion Include="Npgsql" Version="9.0.3" />
+    <PackageVersion Include="Testcontainers.PostgreSql" Version="4.14.0" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
+    <!-- Git-derived product version for Host publish (M011a). -->
+    <PackageVersion Include="MinVer" Version="6.0.0" />
+    <!-- SBOM generation for Release publish/pack (M011b). -->
+    <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.5" />
+  </ItemGroup>
+</Project>

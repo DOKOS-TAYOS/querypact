@@ -1,0 +1,13 @@
+id: mvp-b-equivalence-dml
+version: "1"
+requiredProperties:
+  - name: query_equivalent
+  - name: affected_rows
+    minInclusive: 0
+    maxInclusive: 100
+disclosure:
+  name: strict
+  includePlanSummary: false
+  includeObjectNames: false
+  includeTimings: false
+  includeRowCounts: false

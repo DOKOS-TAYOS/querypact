@@ -1,0 +1,1 @@
+ALTER TABLE orders ADD COLUMN a int; ALTER TABLE orders ADD COLUMN b int;

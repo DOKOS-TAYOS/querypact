@@ -1,0 +1,80 @@
+{
+  "cases": [
+    {
+      "id": "cte",
+      "sql": "WITH active_users AS (SELECT id FROM users WHERE active = true) SELECT o.id FROM orders o JOIN active_users au ON au.id = o.user_id"
+    },
+    {
+      "id": "subquery",
+      "sql": "SELECT id FROM users WHERE id IN (SELECT user_id FROM orders WHERE total > 10)"
+    },
+    {
+      "id": "alias",
+      "sql": "SELECT u.id, u.email FROM users AS u WHERE u.active = true"
+    },
+    {
+      "id": "function",
+      "sql": "SELECT lower(email), count(*) FROM users GROUP BY lower(email)"
+    },
+    {
+      "id": "insert",
+      "sql": "INSERT INTO users (id, email) VALUES (1, 'canary@example.invalid')"
+    },
+    {
+      "id": "update_with_predicate",
+      "sql": "UPDATE users SET email = 'x@example.invalid' WHERE id = 1"
+    },
+    {
+      "id": "update_without_predicate",
+      "sql": "UPDATE users SET email = 'x@example.invalid'"
+    },
+    {
+      "id": "delete_with_predicate",
+      "sql": "DELETE FROM users WHERE id = 1"
+    },
+    {
+      "id": "delete_without_predicate",
+      "sql": "DELETE FROM users"
+    },
+    {
+      "id": "multi_statement",
+      "sql": "SELECT 1; SELECT 2"
+    },
+    {
+      "id": "invalid",
+      "sql": "SELEC id FROM users WHERE email = 'leak@example.invalid'"
+    },
+    {
+      "id": "select_star",
+      "sql": "SELECT * FROM users"
+    },
+    {
+      "id": "bypass_cte_denied_table",
+      "sql": "WITH x AS (SELECT id FROM secrets) SELECT id FROM x"
+    },
+    {
+      "id": "bypass_subquery_denied_table",
+      "sql": "SELECT id FROM users WHERE id IN (SELECT user_id FROM secrets)"
+    },
+    {
+      "id": "bypass_alias_denied_table",
+      "sql": "SELECT s.id FROM secrets AS s"
+    },
+    {
+      "id": "bypass_function_unknown",
+      "sql": "SELECT pg_sleep(1) FROM users"
+    },
+    {
+      "id": "bypass_write_insert",
+      "sql": "INSERT INTO users (id) VALUES (1)"
+    },
+    {
+      "id": "bypass_multi_statement",
+      "sql": "SELECT 1 FROM users; DELETE FROM users WHERE id = 1"
+    },
+    {
+      "id": "canary_literal",
+      "sql": "SELECT id FROM users WHERE email = 'CANARY_LITERAL_do_not_egress@example.invalid'"
+    }
+  ]
+}

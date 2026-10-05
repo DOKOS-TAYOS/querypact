@@ -1,0 +1,1524 @@
+{
+  "schema": 1,
+  "limitation": "50 physical packages retain verified primary texts. This inventory records 39 additional package notice attributions (10 unique byte streams, including byte-preserved source files with embedded notices). Conditional components, documentation licensing, ASF NOTICE, native embedded notices and presentation remain pending; public release BLOCKED.",
+  "packages": [
+    {
+      "id": "BouncyCastle.Cryptography",
+      "version": "2.7.0",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE.md",
+      "sha256": "be0592a6c76f398356fbf252a4fb43476fb3ca3c45331428c2f4f22c499e8311",
+      "nupkgSha256": "f091ffccab4d03993e660bace277659a79dee0972f54d7f1f4bd46d680966241",
+      "nuspecSha256": "89c51e6b51c6d804b0ca2bfc55e00e797ef5e5d79656680d769616995832efc1",
+      "url": "https://api.nuget.org/v3-flatcontainer/bouncycastle.cryptography/2.7.0/bouncycastle.cryptography.2.7.0.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "embedded-notices/Blake2b_X86.cs",
+          "sha256": "9069f135647d13dd04e4c6a89ac8c6f0b5243751d0827ee7986f08281b6b994d",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/crypto/digests/Blake2b_X86.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/crypto/digests/Blake2b_X86.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/crypto/digests/Blake2b_X86.cs"
+          },
+          "obligation": "Retain embedded copyright, permission, conditions and disclaimer; observe non-endorsement where present. Whole original source file retained to avoid changing the legal bytes.",
+          "applicability": "The exact nuspec revision includes this production source in the SDK project; the redistributed net6.0 assembly contains the corresponding type. This package entry lists sibling source files carrying the same notice and records each retained original."
+        },
+        {
+          "archiveEntry": "embedded-notices/Blake2s_X86.cs",
+          "sha256": "4d057027a42dead0b81eb48b8453492851729f2c040e0243febf9ede253f15d6",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/crypto/digests/Blake2s_X86.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/crypto/digests/Blake2s_X86.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/crypto/digests/Blake2s_X86.cs"
+          },
+          "obligation": "Retain embedded copyright, permission, conditions and disclaimer; observe non-endorsement where present. Whole original source file retained to avoid changing the legal bytes.",
+          "applicability": "The exact nuspec revision includes this production source in the SDK project; the redistributed net6.0 assembly contains the corresponding type. This package entry lists sibling source files carrying the same notice and records each retained original."
+        },
+        {
+          "archiveEntry": "embedded-notices/SHAKE256.cs",
+          "sha256": "606e39b0141e1b6406ad24e985dd5a0d57e5bab8d8607a07ec7dac1acdc44dad",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/pqc/crypto/falcon/SHAKE256.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/pqc/crypto/falcon/SHAKE256.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/pqc/crypto/falcon/SHAKE256.cs"
+          },
+          "obligation": "Retain embedded copyright, permission, conditions and disclaimer; observe non-endorsement where present. Whole original source file retained to avoid changing the legal bytes.",
+          "applicability": "The exact nuspec revision includes this production source in the SDK project; the redistributed net6.0 assembly contains the corresponding type. This package entry lists sibling source files carrying the same notice and records each retained original."
+        },
+        {
+          "archiveEntry": "embedded-notices/JZlib.cs",
+          "sha256": "48283e194a772504148e18c48c15d26ee99a113ce34ba7b883de92e01d35c78f",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/util/zlib/JZlib.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/zlib/JZlib.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/zlib/JZlib.cs"
+          },
+          "obligation": "Retain embedded copyright, permission, conditions and disclaimer; observe non-endorsement where present. Whole original source file retained to avoid changing the legal bytes.",
+          "applicability": "The exact nuspec revision includes this production source in the SDK project; the redistributed net6.0 assembly contains the corresponding type. This package entry lists sibling source files carrying the same notice and records each retained original."
+        },
+        {
+          "archiveEntry": "embedded-notices/ZInputStream.cs",
+          "sha256": "3f4f85215465f34033c0c4c6c25c7032baf676debcf8094a6461b1f6e92af71f",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/util/zlib/ZInputStream.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/zlib/ZInputStream.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/zlib/ZInputStream.cs"
+          },
+          "obligation": "Retain embedded copyright, permission, conditions and disclaimer; observe non-endorsement where present. Whole original source file retained to avoid changing the legal bytes.",
+          "applicability": "The exact nuspec revision includes this production source in the SDK project; the redistributed net6.0 assembly contains the corresponding type. This package entry lists sibling source files carrying the same notice and records each retained original."
+        },
+        {
+          "archiveEntry": "embedded-notices/CRC.cs",
+          "sha256": "29506570500676c19b7cd5dd28869761f996408714ebee80cc70ebfe8af7fdb0",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/util/bzip2/CRC.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/bzip2/CRC.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/bzip2/CRC.cs"
+          },
+          "obligation": "Retain embedded copyright, permission, conditions and disclaimer; observe non-endorsement where present. Whole original source file retained to avoid changing the legal bytes.",
+          "applicability": "The exact nuspec revision includes this production source in the SDK project; the redistributed net6.0 assembly contains the corresponding type. This package entry lists sibling source files carrying the same notice and records each retained original."
+        },
+        {
+          "archiveEntry": "embedded-notices/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "sourceType": "referenced",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/bcgit/bc-csharp",
+              "branch": "refs/heads/release/v2.7",
+              "commit": "4007498b13582d90ee1eda5d9920c324428b98b3"
+            },
+            "path": "crypto/src/util/bzip2/CRC.cs",
+            "url": "https://raw.githubusercontent.com/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/bzip2/CRC.cs",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/crypto/src/util/bzip2/CRC.cs",
+            "sha256": "29506570500676c19b7cd5dd28869761f996408714ebee80cc70ebfe8af7fdb0"
+          },
+          "referencedText": {
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+            "cachedPath": "redistribution/upstream/bcgit/bc-csharp/4007498b13582d90ee1eda5d9920c324428b98b3/referenced/Apache-2.0.txt"
+          },
+          "obligation": "Provide the Apache-2.0 license expressly referenced in the original BZip2 source; retain the source attribution. Associated ASF NOTICE identification remains pending.",
+          "applicability": "CRC.cs and sibling BZip2 source headers explicitly license the code under Apache-2.0 and reference its official versioned license URL; the BZip2 types are present in the exact physically distributed assembly."
+        }
+      ]
+    },
+    {
+      "id": "Docker.DotNet.Enhanced",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "7b18fa69821683d72309eb59182683a1db09adc5e45a6e58ea2486c6136accf6",
+      "nuspecSha256": "7bcea0c8b45f9db57dd3faf05e1aec8c56c7a6942c5ce15d5ac062d3adc7aeb2",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced/4.3.3/docker.dotnet.enhanced.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Docker.DotNet.Enhanced.Handler.Abstractions",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "286762872aebf5168e46dbd07eda68406c0ef18349d48406e714cfdc386eaa56",
+      "nuspecSha256": "f6381a12d0dbbd62a02b3e7f5962dda505628440913b7dc9cacda296ad0607e4",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced.handler.abstractions/4.3.3/docker.dotnet.enhanced.handler.abstractions.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Docker.DotNet.Enhanced.LegacyHttp",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "d355a635a667a842c13623e4994cb2af5ab4591e87e0c2e9d3785507c25778a5",
+      "nuspecSha256": "abfbb76ef131c1c0037771a00c8c3c016066e03dcd6a9cc0f7e42342858ccfa0",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced.legacyhttp/4.3.3/docker.dotnet.enhanced.legacyhttp.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Docker.DotNet.Enhanced.NativeHttp",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "685dbce2de92c58ba4255ea766fd5c7fcc4df0c537749c2ca848a132ab86b296",
+      "nuspecSha256": "d9f8489a3ac7f2e8ca519fa3242e5c279e6d1f0acb04400e54ced15b613af577",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced.nativehttp/4.3.3/docker.dotnet.enhanced.nativehttp.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Docker.DotNet.Enhanced.NPipe",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "22e97e93b831ee0737229111ed735c96e1c017a739aea22bc4db934cb196fa51",
+      "nuspecSha256": "92532ebd01ff03f05b4720750f5d87a9838e4742d3eee01d4f82e4e907e7043e",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced.npipe/4.3.3/docker.dotnet.enhanced.npipe.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Docker.DotNet.Enhanced.Unix",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "b5ea67b9ee1169c9e91844348e0422d9165d4c25cb4eca4e7a3ca4bfb1829462",
+      "nuspecSha256": "f3d9ad48520b6844fc19d8f9d96c2289c2c64e67e3147a29dba94e8b650c81be",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced.unix/4.3.3/docker.dotnet.enhanced.unix.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Docker.DotNet.Enhanced.X509",
+      "version": "4.3.3",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "51cec75e131cb33090ef5c554f2d4caf6728cd06b71b92c432de3ae3714ae13f",
+      "nupkgSha256": "354506f643d65a56ac6682dd4f08f879dbc5869fe8e2a5631ea88c3a6c57b95b",
+      "nuspecSha256": "d4e8da56cfed00198b7be0c6d2fb063ce9ad4c39bc8c1a542ae600df0176a9e8",
+      "url": "https://api.nuget.org/v3-flatcontainer/docker.dotnet.enhanced.x509/4.3.3/docker.dotnet.enhanced.x509.4.3.3.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "Testcontainers",
+      "version": "4.14.0",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "defe81b29379cd310c24132e904947a6e9083a41a51e2ae79e43c63393dced3d",
+      "nupkgSha256": "5846ce9e1608150e6c72272cfcf4cc780e03b6a07faf4a15be3a201442a7662b",
+      "nuspecSha256": "7502cea8da1884df5e4e47c3b316c4856390dd4e6670ed8f295891e07938c531",
+      "url": "https://api.nuget.org/v3-flatcontainer/testcontainers/4.14.0/testcontainers.4.14.0.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "embedded-notices/MatchImage.cs",
+          "sha256": "b8079f2e9d4d0b02b3e95f5e7db1d7784ea686b87e43ff84fc374a48b631d7a7",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/testcontainers/testcontainers-dotnet",
+              "commit": "f0208578ad1a71c774e26bf5cdda927cc36b256a"
+            },
+            "path": "src/Testcontainers/Images/MatchImage.cs",
+            "url": "https://raw.githubusercontent.com/testcontainers/testcontainers-dotnet/f0208578ad1a71c774e26bf5cdda927cc36b256a/src/Testcontainers/Images/MatchImage.cs",
+            "cachedPath": "redistribution/upstream/testcontainers/testcontainers-dotnet/f0208578ad1a71c774e26bf5cdda927cc36b256a/src/Testcontainers/Images/MatchImage.cs"
+          },
+          "obligation": "Retain the exact adaptation attribution and source comments with the selected original Apache-2.0 license.",
+          "applicability": "MatchImage.cs explicitly identifies the copied Go regular expression at immutable distribution/reference revision 8c942b0459dfdcc5b6685581dd0a5a470f615bff. Exact net10.0 Testcontainers.dll embedded PDB records MatchImage.cs SHA-256 b8079f2e9d4d0b02b3e95f5e7db1d7784ea686b87e43ff84fc374a48b631d7a7; the MatchImage/ReferenceRegex types and exact physical payload corroborate inclusion. No Ryuk image attribution is implied."
+        },
+        {
+          "archiveEntry": "embedded-notices/distribution-reference-LICENSE",
+          "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14",
+          "sourceType": "linked",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/testcontainers/testcontainers-dotnet",
+              "commit": "f0208578ad1a71c774e26bf5cdda927cc36b256a"
+            },
+            "path": "src/Testcontainers/Images/MatchImage.cs",
+            "url": "https://raw.githubusercontent.com/testcontainers/testcontainers-dotnet/f0208578ad1a71c774e26bf5cdda927cc36b256a/src/Testcontainers/Images/MatchImage.cs",
+            "cachedPath": "redistribution/upstream/testcontainers/testcontainers-dotnet/f0208578ad1a71c774e26bf5cdda927cc36b256a/src/Testcontainers/Images/MatchImage.cs",
+            "sha256": "b8079f2e9d4d0b02b3e95f5e7db1d7784ea686b87e43ff84fc374a48b631d7a7"
+          },
+          "linkedText": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/distribution/reference",
+              "commit": "8c942b0459dfdcc5b6685581dd0a5a470f615bff"
+            },
+            "path": "LICENSE",
+            "url": "https://raw.githubusercontent.com/distribution/reference/8c942b0459dfdcc5b6685581dd0a5a470f615bff/LICENSE",
+            "cachedPath": "redistribution/upstream/distribution/reference/8c942b0459dfdcc5b6685581dd0a5a470f615bff/LICENSE",
+            "reference": {
+              "path": "reference.go",
+              "cachedPath": "redistribution/upstream/distribution/reference/8c942b0459dfdcc5b6685581dd0a5a470f615bff/reference.go",
+              "sha256": "dd1d354746e22b65ea93de90a019f78f42f821a2bf37f4973dfe2354615890a0"
+            }
+          },
+          "obligation": "Supply the original Apache-2.0 license for the copied image-reference regular expression. Preserve applicable source notices; no separate NOTICE exists in the examined pinned reference tree. Legal assessment of derivative source marking remains pending.",
+          "applicability": "MatchImage.cs explicitly identifies the copied Go regular expression at immutable distribution/reference revision 8c942b0459dfdcc5b6685581dd0a5a470f615bff. Exact net10.0 Testcontainers.dll embedded PDB records MatchImage.cs SHA-256 b8079f2e9d4d0b02b3e95f5e7db1d7784ea686b87e43ff84fc374a48b631d7a7; the MatchImage/ReferenceRegex types and exact physical payload corroborate inclusion. No Ryuk image attribution is implied."
+        }
+      ]
+    },
+    {
+      "id": "Testcontainers.PostgreSql",
+      "version": "4.14.0",
+      "licenseExpression": "MIT",
+      "archiveEntry": "LICENSE",
+      "sha256": "defe81b29379cd310c24132e904947a6e9083a41a51e2ae79e43c63393dced3d",
+      "nupkgSha256": "35539d49d8a0bcfc5b05c2d4cf45be1ac2b8c494b1c60bf53d2b84ab2ed703a2",
+      "nuspecSha256": "4ef39a9a6ae0d9ada1cdf898969a65b2847e1823a0a8f351a6ffb9910cdd0792",
+      "url": "https://api.nuget.org/v3-flatcontainer/testcontainers.postgresql/4.14.0/testcontainers.postgresql.4.14.0.nupkg",
+      "obligation": "Preserve this copyright and permission notice with redistributed copies. Further embedded third-party obligations remain under review."
+    },
+    {
+      "id": "ModelContextProtocol",
+      "version": "1.4.1",
+      "licenseExpression": "Apache-2.0",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE",
+      "sha256": "7c6a686d2b34b86ad8c726e0ac4d76903b525f251d73e617f8db3879fa8f11fc",
+      "nupkgSha256": "a15e95fdc480bf44d78e2fd56017531c23e464fb61d6163cddc626ac4f965ec8",
+      "nuspecSha256": "2bb7c50a89fc6e4a9ff7785c1b7a47b0ed994fb4bb13a5cc09ca3e8effeebb55",
+      "url": "https://api.nuget.org/v3-flatcontainer/modelcontextprotocol/1.4.1/modelcontextprotocol.1.4.1.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+          "commit": "2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01"
+        },
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/LICENSE",
+        "cachedPath": "redistribution/upstream/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/LICENSE"
+      },
+      "obligation": "Retain the full upstream licensing-transition file; review Apache section 4, MIT relicensing/retention and documentation CC-BY-4.0 applicability. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.txt",
+          "sha256": "b9c35f6ab075077d5c2b644fdc58eb5696b8b70f539947f9e1e57331599fc5ce",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+              "commit": "2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01"
+            },
+            "path": "THIRD-PARTY-NOTICES.txt",
+            "url": "https://raw.githubusercontent.com/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/THIRD-PARTY-NOTICES.txt",
+            "cachedPath": "redistribution/upstream/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/THIRD-PARTY-NOTICES.txt"
+          },
+          "obligation": "Retain the original SDK attribution document alongside the full Apache/MIT transition text; applicability of individual sections and CC-BY documentation remains pending.",
+          "applicability": "The SDK vendor identifies third-party resources in its original notice; both package projects import src/Directory.Build.props and Common/Polyfills including unconditional IdHelpers.cs. Retain the document at SDK scope; this does not prove inclusion of URI Template Tests or every conditional polyfill."
+        }
+      ]
+    },
+    {
+      "id": "ModelContextProtocol.Core",
+      "version": "1.4.1",
+      "licenseExpression": "Apache-2.0",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE",
+      "sha256": "7c6a686d2b34b86ad8c726e0ac4d76903b525f251d73e617f8db3879fa8f11fc",
+      "nupkgSha256": "df1c30d600e684effcaeefd6fa06071cb7b0f7430111de22ee665e880bd3cd01",
+      "nuspecSha256": "0aef15439ec5181ea10a8c0e40ccd6e4aa661c1101d7e41f8b7f8f98d773a89a",
+      "url": "https://api.nuget.org/v3-flatcontainer/modelcontextprotocol.core/1.4.1/modelcontextprotocol.core.1.4.1.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+          "commit": "2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01"
+        },
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/LICENSE",
+        "cachedPath": "redistribution/upstream/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/LICENSE"
+      },
+      "obligation": "Retain the full upstream licensing-transition file; review Apache section 4, MIT relicensing/retention and documentation CC-BY-4.0 applicability. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.txt",
+          "sha256": "b9c35f6ab075077d5c2b644fdc58eb5696b8b70f539947f9e1e57331599fc5ce",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+              "commit": "2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01"
+            },
+            "path": "THIRD-PARTY-NOTICES.txt",
+            "url": "https://raw.githubusercontent.com/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/THIRD-PARTY-NOTICES.txt",
+            "cachedPath": "redistribution/upstream/modelcontextprotocol/csharp-sdk/2b7fd35fbe58dfb9f00eae8b3393e1a7361b5e01/THIRD-PARTY-NOTICES.txt"
+          },
+          "obligation": "Retain the original SDK attribution document alongside the full Apache/MIT transition text; applicability of individual sections and CC-BY documentation remains pending.",
+          "applicability": "The SDK vendor identifies third-party resources in its original notice; both package projects import src/Directory.Build.props and Common/Polyfills including unconditional IdHelpers.cs. Retain the document at SDK scope; this does not prove inclusion of URI Template Tests or every conditional polyfill."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Options",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "5edc9f759dba9239ee085fd81db74676c21e47f9f1496ef2c90674e2c39af515",
+      "nuspecSha256": "b143a49bfa7872c56e05688ce260cbfd9a6bc32982e4554394a027803f98bb31",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.7/microsoft.extensions.options.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.FileExtensions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "2e31ce58dcd9d48d8e0c41517c8148593370d60a53b496a47a976e9483882c30",
+      "nuspecSha256": "2e10995d78a0af5f1bd667e61ba743bea4aeb381fb6d3cfc892f74579deb34ae",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/10.0.7/microsoft.extensions.configuration.fileextensions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Hosting",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "e26ce39b8f069d96a5f08c6bf605c5913d0d297b7a593ad89cebbf2e8c635fad",
+      "nuspecSha256": "5fee988edbae255be524224538263da2f52095ba18e8f2a606cbfb9d0bf367ba",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/10.0.7/microsoft.extensions.hosting.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "a1c9ed93af106b771c1c6127ce666e29d056750127a783e0c0993addb4918c30",
+      "nuspecSha256": "c95693d5b512010a4cd9032dcf2fe119c5d0af565936069035561e715a938815",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/10.0.7/microsoft.extensions.diagnostics.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Configuration",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "6e07d2cb7d255c984df53f8259dc28767a592432c9a0494ce0728e3828a38dfa",
+      "nuspecSha256": "c426ac0bf7c188c3448f4887799a4ef446ed08d1f6df25227f3f246388c51acb",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/10.0.7/microsoft.extensions.logging.configuration.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "01439eb749d6647075df65c23eec94a79c5314d9d68c78683adce8a057171e4e",
+      "nuspecSha256": "b037cb41886c51a3723b63b3acf9f7dce4b54d9ab319d6e44fc32854468917a4",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/10.0.7/microsoft.extensions.logging.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "System.Diagnostics.EventLog",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "7d5fb645c133055fc95273c338b71edd50502aabe8df6cdc4d63197897000098",
+      "nuspecSha256": "1c11e71fe576acb6c5ece38d76d4b6ded6a898298690090adfc0d0acc9bd0456",
+      "url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/10.0.7/system.diagnostics.eventlog.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.EventLog",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "f8a1b03d29167fe7c66a2738aad2cfea4d45a88babdebcd31e31b0d5c741cdbe",
+      "nuspecSha256": "fa55bf24cc26746ef81124fd286dfb43d7aaeaca4e2349d17811e75aaa3a8a25",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventlog/10.0.7/microsoft.extensions.logging.eventlog.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.FileProviders.Physical",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "0758c5d9767acf94dabd95400f41b35b643420bcac91e51d4da585dce812f666",
+      "nuspecSha256": "3beec1b009ae55f10f732fc3256790bc0bafee9c89b848d792cbc2c7d73be439",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/10.0.7/microsoft.extensions.fileproviders.physical.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.UserSecrets",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "b2133a2629950c27c95987bd7232c55b47177ec4b5aafae4edd1d70f92b6d558",
+      "nuspecSha256": "e44c2a3338e5668ce423a7d82a9017202729dc85e996359aa2658f413998fd44",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/10.0.7/microsoft.extensions.configuration.usersecrets.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "327509cd9627974f3dc6e562ea4a6df64ca6048bd8ba7f54f88b5dd7674ce42a",
+      "nuspecSha256": "f2d24467c054d5665a8cd05f79ad6e0f3efc1f3e8f467acc306e953242232f55",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/10.0.7/microsoft.extensions.configuration.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Primitives",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "7100612f5224465d65c5a648980641552dfd09f5a407e27afa1255115044df92",
+      "nuspecSha256": "5670b34f5300ffd7aa65820509bf67b98c5e919f95bef05d86f3a6ff977836b2",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.7/microsoft.extensions.primitives.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "e94067075a2e5b04645441ade712df5d9be962c0904098a32af06504224e9a63",
+      "nuspecSha256": "be2a09a4193d7a07213f7beda56eee871b04c06b0e0390cc30a15ef944256dcd",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/10.0.7/microsoft.extensions.options.configurationextensions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "fc84cb51781cb39b510dd7a295e36598d07dd95db90917751460687028498f48",
+      "nuspecSha256": "675586915682e8a234b7328c2b6361c8d65c7737a275ff3ef0f28e0c860e4ed7",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.7/microsoft.extensions.logging.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Console",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "a91ecd41a0ac39d1fef80be24f3cf827a0faa5a93f6158e2876699a98736d9df",
+      "nuspecSha256": "a35b944d742106bdc6024a06724616e50b6bb10137de473c77a2238c6681ce25",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/10.0.7/microsoft.extensions.logging.console.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Debug",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "199b0cf92d573d3e516c52cbcd3928630954632f1ce2c9dbc00abcf90cdbedc3",
+      "nuspecSha256": "d59a4c8aa36339fe08bedd2b9e5de1fea002b7e5b0cc630ddf0538b90fa1946d",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/10.0.7/microsoft.extensions.logging.debug.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "b9099341aacc9f47ee655d3733209befc131fbde9cbaa14734ee52c8538f9099",
+      "nuspecSha256": "174866cbf4338f5e9f39a014cfaf952629ffe6cbef75a047c65d7985861e2f01",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.7/microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Diagnostics",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "49dd19b1780eef0ff7e6f38a37507409975c21c3099dffd9ffc3ce4a2913c919",
+      "nuspecSha256": "34da0a042bb5e3b60e03ec2775e5ebdffa6b44e7a0ea2bd513096e5a65d0b999",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/10.0.7/microsoft.extensions.diagnostics.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.FileSystemGlobbing",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "29d2c060f8b31b8c822caee8179c9dde53d7ccc60a23eb99261457283f559478",
+      "nuspecSha256": "d86e3aff4f3b2ee2e86b14949a75522418228c4715d3e8bb5231e16db2693e7e",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/10.0.7/microsoft.extensions.filesystemglobbing.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.CommandLine",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "2e7fe8d095df5cc65928014bb9cf819141d915dcdf9d1a45595ba0969d1fe611",
+      "nuspecSha256": "343066bca463a1f78a1f6924e62ef8e8d6632592e96584499afe44a707e00e6c",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/10.0.7/microsoft.extensions.configuration.commandline.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "c86add143870dd59c630f3ccb02ec018ebecc7cd5a566ed518211cef7b864c77",
+      "nuspecSha256": "6818eeb29b695c68da9c7651ae505c532356656569c9b7605ac5baa307aace75",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/10.0.7/microsoft.extensions.configuration.environmentvariables.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.DependencyInjection",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "7480a881d6aa6b9987ab2bc5034953a2615adfd0ea9b89e7ecf8adeaa8ba7906",
+      "nuspecSha256": "47d81f6d031c27acec097c01e6a2de7f8ed2f36c6efe1a77c4249f0377d6ba09",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/10.0.7/microsoft.extensions.dependencyinjection.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.Json",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "03a610828f298f36bf80ffbce455ee6e6e31618854450bc0b23dd44b49b04d31",
+      "nuspecSha256": "cf0b3f2979febc48e7a02d315d1195b9f40a8ba977b36e37a8a5654c3537e755",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/10.0.7/microsoft.extensions.configuration.json.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Caching.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "bb7a479456833de636bfcf633582e21d443668630aa5ee70a57654b7c86481d1",
+      "nuspecSha256": "76ba4dd8c046c3ff94189056368c53f9e6327affcaa55256d384910fafc0dcd9",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/10.0.7/microsoft.extensions.caching.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "d91a83b3bf9d5ed198efc1398d2775ab22aef9d31091bceffa8318d3d484266d",
+      "nuspecSha256": "92ecada68b5ffca11cb7850e7f47c392039af01cabc19bf8c3eb080d0bdebaee",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/10.0.7/microsoft.extensions.configuration.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Hosting.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "4b55808011cf8bb1fbd6e4141b2976686fc82138187d53739f25ec16b45efe41",
+      "nuspecSha256": "e65551e92752e708320ac62dd1e3778eb75f6ad1162b3b37b0c7409dfd0caff3",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/10.0.7/microsoft.extensions.hosting.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.Binder",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "954e06f34d7e0b2dee6be4b6b256395151ce3d7745d08eebde5617dfc99048fc",
+      "nuspecSha256": "229a9034b37e2b1c4184698cba0ea919f4adfbdcd0d1c6b9fb539ebb315df551",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/10.0.7/microsoft.extensions.configuration.binder.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.FileProviders.Abstractions",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "89bc5277189bab550a3a8e0ccfeced85b65dd145058a99c935bd213f0bc45c20",
+      "nuspecSha256": "bc7dd626af23b7090b753057acd672055ac50036bf258acfe3354620db0fbf34",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/10.0.7/microsoft.extensions.fileproviders.abstractions.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.EventSource",
+      "version": "10.0.7",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.TXT",
+      "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+      "nupkgSha256": "e9ce5e0807402833018e43ede7d45770384974d15abb8b05bacfbdc56faa5a28",
+      "nuspecSha256": "812877c318fcb611f44fae81b2c0a3072848c7691bad2fca72d4f29116b25ea4",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/10.0.7/microsoft.extensions.logging.eventsource.10.0.7.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+        },
+        "path": "src/runtime/LICENSE.TXT",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/src/runtime/LICENSE.TXT",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/b16286c2284fecf303dbc12a0bb152476d662e44/LICENSE.TXT"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21",
+          "sourceType": "archive",
+          "obligation": "Preserve the vendor notice supplied in this exact redistributed NuGet; no assertion that every listed component is present in this individual assembly.",
+          "applicability": "Exact package supplies this notice with the physically verified assembly. Upstream and archived notice text are identical after CRLF normalization, but original hashes/bytes differ; use the package original."
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Extensions.AI.Abstractions",
+      "version": "10.5.2",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE",
+      "sha256": "47f0ad8ba753eae5de6178291cd8f38bbb42d2368b177f8e11714ad17c701275",
+      "nupkgSha256": "9122b99756ad0133e75e1787f6a4f3e344ef8827d7327d3d00cc0c4c41e59dd0",
+      "nuspecSha256": "c4ea439c74a64f853ea89e38ef0ccb117a42abf8750e6260bdddda5010736595",
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ai.abstractions/10.5.2/microsoft.extensions.ai.abstractions.10.5.2.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/extensions",
+          "commit": "2a86d759c251eee39274c191bd9f8e14c58f875a"
+        },
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/dotnet/extensions/2a86d759c251eee39274c191bd9f8e14c58f875a/LICENSE",
+        "cachedPath": "redistribution/upstream/dotnet/extensions/2a86d759c251eee39274c191bd9f8e14c58f875a/LICENSE"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance."
+    },
+    {
+      "id": "System.CommandLine",
+      "version": "2.0.10",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.md",
+      "sha256": "58fd5ebf25d75b5bb5f4cd407a9fef3befd3641e1af90a1d0716618e6430fc19",
+      "nupkgSha256": "8a58c35e21a3b40fb0f642c72edc914a6ebb56f4674ca89049f3d44cdb760541",
+      "nuspecSha256": "584325ac3c06fe62591d7c92499baaca4d35f4437d74cd66de5eb50ba44254b4",
+      "url": "https://api.nuget.org/v3-flatcontainer/system.commandline/2.0.10/system.commandline.2.0.10.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/dotnet/dotnet",
+          "commit": "f7d90799ce4ef09a0bb257852a57248d2a8fb8dd"
+        },
+        "path": "src/command-line-api/LICENSE.md",
+        "url": "https://raw.githubusercontent.com/dotnet/dotnet/f7d90799ce4ef09a0bb257852a57248d2a8fb8dd/src/command-line-api/LICENSE.md",
+        "cachedPath": "redistribution/upstream/dotnet/dotnet/f7d90799ce4ef09a0bb257852a57248d2a8fb8dd/LICENSE.md"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance."
+    },
+    {
+      "id": "google.protobuf",
+      "version": "3.33.0",
+      "licenseExpression": "BSD-3-Clause",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE",
+      "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "nupkgSha256": "823ab5d95742d814a7a113098bfb2b7111c4a79e75fffe8fb39a4f6a76ea6d07",
+      "nuspecSha256": "7674329a3870f6653883779303097c12a2167b9a8b1b388ee1d107e1e2268b6b",
+      "url": "https://api.nuget.org/v3-flatcontainer/google.protobuf/3.33.0/google.protobuf.3.33.0.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/protocolbuffers/protobuf.git",
+          "commit": "a79f2d2e9fadd75e94f3fe40a0399bf0a5d90551"
+        },
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/protocolbuffers/protobuf/a79f2d2e9fadd75e94f3fe40a0399bf0a5d90551/LICENSE",
+        "cachedPath": "redistribution/upstream/protocolbuffers/protobuf/a79f2d2e9fadd75e94f3fe40a0399bf0a5d90551/LICENSE"
+      },
+      "obligation": "Retain copyright, conditions and disclaimer in binary documentation/materials; observe the non-endorsement condition. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance."
+    },
+    {
+      "id": "npgsql",
+      "version": "9.0.3",
+      "licenseExpression": "PostgreSQL",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE",
+      "sha256": "0e027c13e389ffca97a3ad4053372b747c062d33345c9915ecb060e33ee90643",
+      "nupkgSha256": "5f7174e46363def35597ef95395e5331813976f11ee9cc7493ee725a8d90ffea",
+      "nuspecSha256": "6a7b5f809e779060c2ba2a2600c0c7f7fa8ada5f20ac816fac682c7c95466afa",
+      "url": "https://api.nuget.org/v3-flatcontainer/npgsql/9.0.3/npgsql.9.0.3.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/npgsql/npgsql",
+          "commit": "97dc1739c6cf5890acf450f20f04e64c14c7ffd5"
+        },
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/npgsql/npgsql/97dc1739c6cf5890acf450f20f04e64c14c7ffd5/LICENSE",
+        "cachedPath": "redistribution/upstream/npgsql/npgsql/97dc1739c6cf5890acf450f20f04e64c14c7ffd5/LICENSE"
+      },
+      "obligation": "Retain copyright and permission notice in copies and documentation. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance."
+    },
+    {
+      "id": "sharpziplib",
+      "version": "1.4.2",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.txt",
+      "sha256": "d7fbbc16f871bf24fa5624c7eaf945054b778985f32676dcacba41fddca61133",
+      "nupkgSha256": "fe0895aa2930a2b1b65caa9f37db8bca35125ebdf9cc1b99d855f6afc5ff5946",
+      "nuspecSha256": "bcbd41de9f4c1ea78144211b4b4a0a5adc1945c63caa9d6df76687d885f03628",
+      "url": "https://api.nuget.org/v3-flatcontainer/sharpziplib/1.4.2/sharpziplib.1.4.2.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/icsharpcode/SharpZipLib",
+          "commit": "33f64eb0f28cdd2b084cb822fcc224c7c5aba553"
+        },
+        "path": "LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/icsharpcode/SharpZipLib/33f64eb0f28cdd2b084cb822fcc224c7c5aba553/LICENSE.txt",
+        "cachedPath": "redistribution/upstream/icsharpcode/SharpZipLib/33f64eb0f28cdd2b084cb822fcc224c7c5aba553/LICENSE.txt"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance."
+    },
+    {
+      "id": "ssh.net",
+      "version": "2026.0.0",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE",
+      "sha256": "84c79a38515de2833a7c353395e04056c0cbd77545d450fe216d569e1570b78e",
+      "nupkgSha256": "b2515de616821198f5cf5530f5ea198912730bbe3504ef4c6aee00a661fecac2",
+      "nuspecSha256": "219617f6fe22256e72ab26160875a9da4d679cbb7f3a6d7ffc4aa9760de47ee9",
+      "url": "https://api.nuget.org/v3-flatcontainer/ssh.net/2026.0.0/ssh.net.2026.0.0.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/sshnet/SSH.NET",
+          "commit": "7b2fd3dbf2c86a80a7b06cea020aa5f821c9902e"
+        },
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/sshnet/SSH.NET/7b2fd3dbf2c86a80a7b06cea020aa5f821c9902e/LICENSE",
+        "cachedPath": "redistribution/upstream/sshnet/SSH.NET/7b2fd3dbf2c86a80a7b06cea020aa5f821c9902e/LICENSE"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "THIRD-PARTY-NOTICES.TXT",
+          "sha256": "9ce436c5811f18ba3deb9442dacdbad4fada7923cba5a582a4250a5e4b195426",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/sshnet/SSH.NET",
+              "commit": "7b2fd3dbf2c86a80a7b06cea020aa5f821c9902e"
+            },
+            "path": "THIRD-PARTY-NOTICES.TXT",
+            "url": "https://raw.githubusercontent.com/sshnet/SSH.NET/7b2fd3dbf2c86a80a7b06cea020aa5f821c9902e/THIRD-PARTY-NOTICES.TXT",
+            "cachedPath": "redistribution/upstream/sshnet/SSH.NET/7b2fd3dbf2c86a80a7b06cea020aa5f821c9902e/THIRD-PARTY-NOTICES.TXT"
+          },
+          "obligation": "Retain BCrypt copyright and permission notice for the compiled Bcrypt implementation; preserve the complete original document. Historical BouncyCastle section remains separate from the 2.7.0 package license.",
+          "applicability": "src/Renci.SshNet/Security/Cryptography/Bcrypt.cs carries the same Damien Miller/Ryan Emerle attribution and is included by the SDK project for net10.0; the exact Renci.SshNet.dll is physically verified."
+        }
+      ]
+    },
+    {
+      "id": "yamldotnet",
+      "version": "16.3.0",
+      "licenseExpression": "MIT",
+      "sourceType": "upstream",
+      "archiveEntry": "LICENSE.txt",
+      "sha256": "daea8b7f1b2bab48ea12ad50b0ce91634669d99d7dd0cb64aed8dffeeef69ed3",
+      "nupkgSha256": "e068bcc1243c46c8bfdfe2f27a026bfff03cde7c67d9f37c2cdd70bd24a9dfd4",
+      "nuspecSha256": "f1573d3b0c83844d8ed3ae016240cb18cd3674b8f5d82b40fcccbe49ff97774e",
+      "url": "https://api.nuget.org/v3-flatcontainer/yamldotnet/16.3.0/yamldotnet.16.3.0.nupkg",
+      "upstream": {
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/aaubry/YamlDotNet",
+          "commit": "ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73"
+        },
+        "path": "LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/LICENSE.txt",
+        "cachedPath": "redistribution/upstream/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/LICENSE.txt"
+      },
+      "obligation": "Retain copyright and permission notices. Full embedded/transitive attribution applicability remains pending; preserving the primary text does not establish redistribution compliance.",
+      "additionalNotices": [
+        {
+          "archiveEntry": "embedded-notices/DefaultObjectPool.cs",
+          "sha256": "5df139798454e7ce1c5216d3585e5792b3f348b4f9a0acbbd33942743a90efc3",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/aaubry/YamlDotNet",
+              "commit": "ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73"
+            },
+            "path": "YamlDotNet/Core/ObjectPool/DefaultObjectPool.cs",
+            "url": "https://raw.githubusercontent.com/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/YamlDotNet/Core/ObjectPool/DefaultObjectPool.cs",
+            "cachedPath": "redistribution/upstream/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/YamlDotNet/Core/ObjectPool/DefaultObjectPool.cs"
+          },
+          "obligation": "Preserve the original adapted-source attribution block together with the original .NET Foundation MIT notice.",
+          "applicability": "Six ObjectPool sources retain the identical explicit aspnetcore adaptation header; SDK default compile and corresponding types in the exact archived net8.0 assembly corroborate inclusion. The pinned source identity, revision, path, URL, and cached original are recorded in this package entry."
+        },
+        {
+          "archiveEntry": "embedded-notices/aspnetcore-LICENSE.txt",
+          "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+          "sourceType": "linked",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/aaubry/YamlDotNet",
+              "commit": "ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73"
+            },
+            "path": "YamlDotNet/Core/ObjectPool/DefaultObjectPool.cs",
+            "url": "https://raw.githubusercontent.com/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/YamlDotNet/Core/ObjectPool/DefaultObjectPool.cs",
+            "cachedPath": "redistribution/upstream/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/YamlDotNet/Core/ObjectPool/DefaultObjectPool.cs",
+            "sha256": "5df139798454e7ce1c5216d3585e5792b3f348b4f9a0acbbd33942743a90efc3"
+          },
+          "linkedText": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/dotnet/aspnetcore",
+              "commit": "2f1db20456007c9515068a35a65afdf99af70bc6"
+            },
+            "path": "LICENSE.txt",
+            "url": "https://raw.githubusercontent.com/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/LICENSE.txt",
+            "cachedPath": "redistribution/upstream/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/LICENSE.txt",
+            "reference": {
+              "path": "src/ObjectPool/src/DefaultObjectPool.cs",
+              "cachedPath": "redistribution/upstream/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/ObjectPool/src/DefaultObjectPool.cs",
+              "sha256": "a8f567c50a29d7a0ca41d1d16c701acd626524108331269ae92766efadca09cb"
+            }
+          },
+          "obligation": "Include the original .NET Foundation and Contributors copyright and MIT permission/disclaimer with copies or substantial portions of the adapted ObjectPool code.",
+          "applicability": "The package-revision DefaultObjectPool.cs explicitly links the immutable aspnetcore source; that source carries the .NET Foundation MIT header and its repository LICENSE.txt supplies the original copyright and permission."
+        },
+        {
+          "archiveEntry": "LICENSE-libyaml",
+          "sha256": "cb65f46df0d9125ba60862117200ec6631fef3a8169cd0b4513ffcad4ef5cb9b",
+          "sourceType": "upstream",
+          "upstream": {
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/aaubry/YamlDotNet",
+              "commit": "ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73"
+            },
+            "path": "LICENSE-libyaml",
+            "url": "https://raw.githubusercontent.com/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/LICENSE-libyaml",
+            "cachedPath": "redistribution/upstream/aaubry/YamlDotNet/ae480660f4fb26f3eb0b41c1d1fcf21c0e9d9e73/LICENSE-libyaml"
+          },
+          "obligation": "Include the Kirill Simonov copyright and MIT permission/disclaimer with copies or substantial portions of the ported code.",
+          "applicability": "Git follow history connects the current Parser/Scanner to CoreCs ports, the 2008 port completion commits and original bundled libyaml sources; original README expressly identifies that port and LICENSE-libyaml. The pinned repository revision, source path, URL, and cached LICENSE-libyaml are recorded in this entry; no byte-identical upstream build is claimed."
+        }
+      ]
+    }
+  ]
+}

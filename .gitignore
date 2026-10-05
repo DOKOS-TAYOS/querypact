@@ -1,0 +1,64 @@
+## Build
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+artifacts/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## IDE
+.vs/
+.idea/
+.cursor/
+*.swp
+*~
+
+## Tooling caches
+.ruff_cache/
+.worktrees/
+.superpowers/
+
+## NuGet
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+project.fragment.lock.json
+
+## Secrets / local config
+.env
+.env.*
+!.env.example
+**/secrets.json
+**/appsettings.*.local.json
+*.local.dsn
+*.dsn.local
+local.settings.json
+
+## Testcontainers / Docker leftovers
+.testcontainers/
+.docker/
+docker-compose.override.yml
+
+## OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Coverage / test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+coverage.json
+coverage.cobertura.xml
+
+## Publish outputs (do not ignore tests/Sav.Host.Tests/Publish/)
+/[Pp]ublish/
+!tests/**/[Pp]ublish/
+!tests/**/[Pp]ublish/**
+
+# Spike build / publish outputs
+spikes/**/[Pp]ublish/

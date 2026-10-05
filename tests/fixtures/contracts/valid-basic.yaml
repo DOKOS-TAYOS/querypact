@@ -1,0 +1,10 @@
+id: demo-contract
+version: "1"
+requiredProperties:
+  - name: query_succeeds
+disclosure:
+  name: strict
+  includePlanSummary: false
+  includeObjectNames: false
+  includeTimings: false
+  includeRowCounts: false

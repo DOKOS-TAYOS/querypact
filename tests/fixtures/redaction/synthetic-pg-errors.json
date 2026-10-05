@@ -1,0 +1,26 @@
+[
+  {
+    "id": "detail_row_canary",
+    "message": "ERROR: duplicate key value violates unique constraint \"users_pkey\"\nDETAIL: Key (email)=(CANARY_LITERAL_do_not_egress@example.invalid) already exists.\nHINT: Check password=super-secret-password before retry."
+  },
+  {
+    "id": "notice_canary",
+    "message": "NOTICE: CANARY_LITERAL_do_not_egress@example.invalid leaked from RAISE"
+  },
+  {
+    "id": "context_plpgsql",
+    "message": "ERROR: division by zero\nCONTEXT: PL/pgSQL function leak_fn() line 5 at RAISE\nDETAIL: row=(id=42, secret=CANARY_LITERAL_do_not_egress@example.invalid)"
+  },
+  {
+    "id": "dsn_in_error",
+    "message": "connection failed: postgresql://user:super-secret-password@evil.example:5432/sav"
+  },
+  {
+    "id": "stack_trace",
+    "message": "Npgsql.PostgresException: 28P01 password authentication failed\n   at Npgsql.Internal.NpgsqlConnector.Authenticate(...)\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess()"
+  },
+  {
+    "id": "explain_filter_literal",
+    "message": "DETAIL: Filter (note = 'CANARY_LITERAL_do_not_egress@example.invalid') Plan Rows: 123456"
+  }
+]

@@ -1,0 +1,128 @@
+# CI: Linux supported source runtime/integration lane + Windows source compatibility lane
+
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: querypact-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  TESTCONTAINERS_RYUK_DISABLED: "true"
+
+jobs:
+  windows-source-compatibility:
+    name: Windows source compatibility (build and tests)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+          # DotNetTool 4.1.5 targets net8.0; do not roll it to .NET 10.
+          dotnet-version: '8.0.x'
+
+      - name: UTF-8 / no-mojibake
+        shell: pwsh
+        run: ./scripts/Test-NoMojibake.ps1
+
+      - name: Setup Python for offline release validation
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Offline release license failure tests
+        run: python -B scripts/test_release_licenses.py -v
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: "Format verify (style + analyzers; whitespace EOL deferred: Windows CRLF vs editorconfig lf)"
+        run: |
+          dotnet format style --verify-no-changes --no-restore
+          dotnet format analyzers --verify-no-changes --no-restore
+
+      - name: Build Release
+        run: dotnet build -c Release --no-restore
+
+      # Hosted Windows runners cannot run these Linux-container tests; the supported
+      # Linux runtime/integration lane runs the full Postgres + Security + Host suites.
+      - name: Source compatibility tests without Linux containers
+        shell: pwsh
+        run: |
+          $projects = @(
+            "tests/Sav.Domain.Tests/Sav.Domain.Tests.csproj",
+            "tests/Sav.Application.Tests/Sav.Application.Tests.csproj",
+            "tests/Sav.Infrastructure.Config.Tests/Sav.Infrastructure.Config.Tests.csproj",
+            "tests/Sav.Infrastructure.Storage.Tests/Sav.Infrastructure.Storage.Tests.csproj"
+          )
+          foreach ($p in $projects) {
+            dotnet test $p -c Release --no-build
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+          # Parser / scaffold source compatibility on Windows; Testcontainers → Linux.
+          dotnet test tests/Sav.Infrastructure.Postgres.Tests/Sav.Infrastructure.Postgres.Tests.csproj -c Release --no-build `
+            --filter "FullyQualifiedName~Sav.Infrastructure.Postgres.Tests.Parsing|FullyQualifiedName~ScaffoldSmoke&FullyQualifiedName!~NativeParserPublishSmokeTests"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          # Host source compatibility without Docker integration tests.
+          dotnet test tests/Sav.Host.Tests/Sav.Host.Tests.csproj -c Release --no-build `
+            --filter "FullyQualifiedName!~VerifyQueryDocker&FullyQualifiedName!~VerifyEquivalenceDocker&FullyQualifiedName!~Verify_migration_allow_path_uses_ephemeral_docker&FullyQualifiedName!~PublishedVerifyQuery&FullyQualifiedName!~Published_querypact_exe_verify_query&FullyQualifiedName!~NativeParserPublishSmokeTests"
+
+      - name: Vulnerable packages
+        run: dotnet list package --vulnerable --include-transitive
+
+      - name: Git diff check
+        shell: bash
+        run: git diff --check
+
+  linux-docker-tests:
+    name: Linux supported runtime and Testcontainers security/integration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Pull Postgres image
+        run: docker pull postgres:16-alpine
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build Release
+        run: dotnet build -c Release --no-restore
+
+      - name: Run supported source CLI
+        run: |
+          dotnet run --project src/Sav.Host/Sav.Host.csproj -c Release --no-build -- --help
+          dotnet run --project src/Sav.Host/Sav.Host.csproj -c Release --no-build -- --version
+
+      # Full Postgres + Security suites (incl. synthetic) and Host Docker E2E.
+      # E2E suites exercise the supported Linux source runtime against Linux Postgres.
+      - name: Testcontainers suites
+        shell: bash
+        run: |
+          set -euo pipefail
+          dotnet test tests/Sav.Infrastructure.Postgres.Tests/Sav.Infrastructure.Postgres.Tests.csproj -c Release --no-build \
+            --filter "FullyQualifiedName!~NativeParserPublishSmokeTests"
+          dotnet test tests/Sav.Security.Tests/Sav.Security.Tests.csproj -c Release --no-build
+          dotnet test tests/Sav.Host.Tests/Sav.Host.Tests.csproj -c Release --no-build \
+            --filter "FullyQualifiedName~VerifyQueryDocker|FullyQualifiedName~VerifyEquivalenceDocker|FullyQualifiedName~VerifyMigrationE2E|FullyQualifiedName~VerifyQueryE2E|FullyQualifiedName~VerifyEquivalenceE2E"

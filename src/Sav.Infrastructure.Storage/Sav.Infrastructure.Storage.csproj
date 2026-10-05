@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <InternalsVisibleTo Include="Sav.Infrastructure.Storage.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sav.Application\Sav.Application.csproj" />
+    <ProjectReference Include="..\Sav.Domain\Sav.Domain.csproj" />
+  </ItemGroup>
+</Project>

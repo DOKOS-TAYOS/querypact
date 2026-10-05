@@ -1,0 +1,15 @@
+# Normalize text to LF in the repo; Windows checkouts still work via core.autocrlf.
+* text=auto eol=lf
+*.{cmd,bat,ps1} text eol=crlf
+*.sln text eol=crlf
+*.png binary
+*.jpg binary
+*.dll binary
+*.so binary
+*.exe binary
+# Preserve the upstream wrapper LICENSE's original final blank line.
+redistribution/pgsqlparser/LICENSE -text whitespace=-blank-at-eof
+redistribution/pgsqlparser/libpg_query.LICENSE -text
+redistribution/pgsqlparser/PostgreSQL.COPYRIGHT -text
+# Immutable upstream legal bytes, including their original line endings.
+redistribution/upstream/** -text whitespace=-blank-at-eof,-blank-at-eol

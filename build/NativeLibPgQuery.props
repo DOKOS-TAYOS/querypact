@@ -1,0 +1,12 @@
+<Project>
+  <!-- Locked by parser spike (pgsqlparser 1.0.0, packaging profile 1). -->
+  <PropertyGroup>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <!--
+    pgsqlparser ships RID-specific native assets:
+      runtimes/win-x64/native/libpg_query.dll
+      runtimes/linux-x64/native/libpg_query.so
+    No extra ItemGroup copy was required for profile-1 single-file evidence in M002 spike.
+  -->
+</Project>

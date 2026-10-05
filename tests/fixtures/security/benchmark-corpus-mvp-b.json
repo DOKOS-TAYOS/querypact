@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "band": "MVP-B",
+  "cases": [
+    {
+      "id": "unique_non_null_identifier_injection",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "unique/non_null oracle templates reject unsafe column identifiers",
+      "ownerTest": "Sav.Security.Tests.Bypass.UniqueNonNullIdentifierBypassTests.Unique_template_rejects_unsafe_column_identifiers",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "unique_non_null_no_row_leak",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "noleak",
+      "title": "unique/non_null fail paths never leak row payloads or counts",
+      "ownerTest": "Sav.Security.Tests.NoLeak.UniqueNonNullNoRowLeakTests.Unique_fail_never_leaks_row_payload_or_count",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "unique_non_null_notice_leakage",
+      "wave": 1,
+      "severity": "High",
+      "category": "noleak",
+      "title": "unique path redacts RAISE EXCEPTION canary from oracle egress",
+      "ownerTest": "Sav.Security.Tests.NoLeak.UniqueNonNullNoticeLeakageTests.Raise_exception_canary_redacted_on_unique_path",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "verify_migration_never_real_alias",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "surface",
+      "title": "verify_migration never resolves or exposes a real target alias",
+      "ownerTest": "Sav.Security.Tests.Surface.VerifyMigrationNeverUsesRealAliasE2ETests.Request_cli_and_tool_surfaces_have_no_target_alias_hook",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "verify_migration_policy_before_apply",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "authorize",
+      "title": "Denied migration fixtures never invoke shadow apply (policy-before-apply)",
+      "ownerTest": "Sav.Security.Tests.Authorize.VerifyMigrationDeniesBeforeApplyTests.Denied_migration_fixtures_never_invoke_shadow",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "oracle_template_bypass_query_equivalent",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "query_equivalent EXCEPT ALL templates are count-only and reject unsafe pairs",
+      "ownerTest": "Sav.Security.Tests.Bypass.QueryEquivalentTemplateBypassTests.Except_all_templates_wrap_both_directions_as_count_only",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "schema_orphan_identifier_bypass",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "schema_invariant / no_new_orphans reject unsafe identifiers",
+      "ownerTest": "Sav.Security.Tests.Bypass.SchemaOrphanIdentifierBypassTests.No_new_orphans_rejects_unsafe_parent_table",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "affected_rows_exact_shape",
+      "wave": 1,
+      "severity": "High",
+      "category": "bypass",
+      "title": "affected_rows template is direct DML; multi-statement rejected",
+      "ownerTest": "Sav.Security.Tests.Surface.AffectedRowsExactShapeTests.Affected_rows_template_is_direct_dml_without_select_wrapper",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "affected_rows_never_real_alias",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "affected_rows on real alias is property_environment_forbidden before execute",
+      "ownerTest": "Sav.Security.Tests.Surface.AffectedRowsNeverUsesRealAliasTests.Real_alias_returns_property_environment_forbidden_before_execute",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "schema_orphan_forbidden_on_verify_query",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "authorize",
+      "title": "schema_invariant / no_new_orphans / affected_rows forbidden on verify_query real alias",
+      "ownerTest": "Sav.Application.Tests.Verify.VerifyQuerySchemaPropsForbiddenOnRealAliasTests.Schema_invariant_and_orphans_on_real_alias_are_property_environment_forbidden",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "egress_verify_equivalence_host_di",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "VerifyEquivalenceResponse via host DI passes RedactObject",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectVerifyHostTests.VerifyEquivalenceResponse_via_host_di_calls_RedactObject",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_verify_migration_host_di",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "VerifyMigrationResponse via host DI passes RedactObject",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectVerifyHostTests.VerifyMigrationResponse_via_host_di_calls_RedactObject",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_cli_verify_equivalence_and_migration",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "CLI verify-equivalence and verify-migration stdout JSON are redacted",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectVerifyHostTests.Cli_verify_equivalence_and_migration_stdout_json_are_redacted",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_mcp_verify_equivalence_and_migration",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "MCP verify_equivalence and verify_migration JSON are redacted",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectVerifyHostTests.Mcp_verify_equivalence_and_migration_json_are_redacted",
+      "expectedOutcome": "redact"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+id: migration-ddl
+version: "1"
+allowedStatementTypes:
+  - AlterTable
+  - IndexStmt
+  - CreateTable
+deniedTables:
+  - secret_table
+deniedColumns: []
+allowedFunctions: []
+denyUnresolvedObjects: false
+denyMultipleStatements: true
+denyUpdateDeleteWithoutPredicate: true
+maxCostBucket: high
+forbiddenPlanNodes: []
+disclosure:
+  name: strict
+  includePlanSummary: false
+  includeObjectNames: false
+  includeTimings: false
+  includeRowCounts: false

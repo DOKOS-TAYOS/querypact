@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "band": "MVP-A",
+  "cases": [
+    {
+      "id": "multi_statement_bypass",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "Multi-statement agent SQL is denied by analyze policy",
+      "ownerTest": "Sav.Security.Tests.Bypass.CteSubqueryAliasTests.Multi_statement_is_denied",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "cte_write_smuggle",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "Write verb smuggled inside CTE is rejected by oracle boundary",
+      "ownerTest": "Sav.Security.Tests.Bypass.OracleSqlBoundaryBypassTests.Rejects_write_verb_smuggled_in_cte",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "policy_path_traversal_cli",
+      "wave": 1,
+      "severity": "High",
+      "category": "path",
+      "title": "CLI analyze rejects policy path escape (confused-deputy / LFI)",
+      "ownerTest": "Sav.Host.Tests.CliPathTraversalTests.Analyze_cli_rejects_policy_path_escape",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "policy_path_traversal_mcp",
+      "wave": 1,
+      "severity": "High",
+      "category": "path",
+      "title": "MCP analyze_sql rejects PolicyPath / ContractPath escape",
+      "ownerTest": "Sav.Host.Tests.McpPathTraversalTests.Analyze_sql_rejects_policy_path_escape",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "attestation_id_path_traversal",
+      "wave": 1,
+      "severity": "High",
+      "category": "path",
+      "title": "Attestation id allow-list rejects traversal / LFI ids",
+      "ownerTest": "Sav.Security.Tests.Surface.AttestationIdPathTraversalTests.Guard_rejects_traversal_and_invalid_ids",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "agent_supplied_dsn_rejection",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "authorize",
+      "title": "Alias resolver rejects agent-supplied DSN-shaped names",
+      "ownerTest": "Sav.Infrastructure.Postgres.Tests.Targets.RejectAgentDsnTests.Resolver_rejects_alias_names_that_look_like_connection_strings",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "execute_sql_absence",
+      "wave": 1,
+      "severity": "Critical",
+      "category": "surface",
+      "title": "MCP catalogs and Host assembly never expose execute_sql",
+      "ownerTest": "Sav.Security.Tests.Surface.NoExecuteSqlToolTests.Mcp_catalogs_never_include_execute_sql",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "explain_analyze_absence",
+      "wave": 1,
+      "severity": "High",
+      "category": "surface",
+      "title": "Plan provider and verify/analyze surfaces never emit EXPLAIN ANALYZE",
+      "ownerTest": "Sav.Infrastructure.Postgres.Tests.Plans.ExplainPlanProviderTests",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "attestation_hmac_tamper",
+      "wave": 1,
+      "severity": "High",
+      "category": "hmac",
+      "title": "Bit-flip of attestation body changes HMAC",
+      "ownerTest": "Sav.Infrastructure.Storage.Tests.Attestations.AttestationHmacTamperTests.Bit_flip_of_body_yields_integrity_failure",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "attestation_hmac_matches_redacted_egress",
+      "wave": 1,
+      "severity": "High",
+      "category": "hmac",
+      "title": "HMAC covers redacted body; post-sign mutation fails verify",
+      "ownerTest": "Sav.Security.Tests.NoLeak.AttestationHmacMatchesRedactedEgressTests.Hmac_matches_redacted_body_and_rejects_post_sign_mutation",
+      "expectedOutcome": "pass"
+    },
+    {
+      "id": "hmac_key_too_weak_startup",
+      "wave": 1,
+      "severity": "High",
+      "category": "hmac",
+      "title": "Full DI refuses HMAC keys shorter than 32 decoded bytes",
+      "ownerTest": "Sav.Host.Tests.Composition.FullRequiresHmacKeyTests.Too_short_key_throws_attestation_hmac_key_too_weak",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "notice_leakage_canary",
+      "wave": 2,
+      "severity": "High",
+      "category": "noleak",
+      "title": "NOTICE/DETAIL canary stripped from oracle egress",
+      "ownerTest": "Sav.Security.Tests.NoLeak.OracleNoticeLeakageTests.Redact_egress_strips_notice_detail_and_canary",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "analyze_never_opens_pg",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "surface",
+      "title": "Analyze path never opens PostgreSQL session or plan/catalog ports",
+      "ownerTest": "Sav.Host.Tests.CliAnalyzeNeverOpensPostgresTests.AnalyzeSqlUseCase_ctor_has_no_session_or_connection_dependencies",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "readonly_insert_capable_no_temp_refused",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "authorize",
+      "title": "Writable alias is refused by the production read-only guard",
+      "ownerTest": "Sav.Infrastructure.Postgres.Tests.Targets.ReadOnlyRoleEnforcementTests.Writer_role_is_refused_by_production_guard",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "canary_trigger_side_effect_refuse",
+      "wave": 2,
+      "severity": "High",
+      "category": "authorize",
+      "title": "Trigger side-effect on RO probe refuses role_not_read_only",
+      "ownerTest": "Sav.Security.Tests.Surface.ReadOnlyCanaryTriggerSideEffectTests.Trigger_write_outside_probe_with_successful_canary_refuses_role_not_read_only",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "oracle_template_bypass_query_succeeds_empty_result",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "query_succeeds and empty_result templates always wrap agent SQL",
+      "ownerTest": "Sav.Security.Tests.Bypass.QuerySucceedsTemplateBypassTests",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "query_succeeds_no_row_leak",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "noleak",
+      "title": "query_succeeds EXISTS path never leaks row payloads",
+      "ownerTest": "Sav.Security.Tests.NoLeak.QuerySucceedsNoRowLeakTests.Exists_scalar_path_never_leaks_row_payloads",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "empty_result_no_row_leak",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "noleak",
+      "title": "empty_result NOT EXISTS fail path never leaks row payloads",
+      "ownerTest": "Sav.Security.Tests.NoLeak.EmptyResultNoRowLeakTests.Not_exists_fail_path_never_leaks_row_payloads",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "pool_checkout_reapplies_readonly",
+      "wave": 2,
+      "severity": "High",
+      "category": "authorize",
+      "title": "Every execute re-applies transaction_read_only",
+      "ownerTest": "Sav.Infrastructure.Postgres.Tests.Targets.ReadOnlyPoolCheckoutReapplyTests.Every_execute_reapplies_transaction_read_only",
+      "expectedOutcome": "pass"
+    },
+    {
+      "id": "diff-missing-table",
+      "wave": 2,
+      "severity": "High",
+      "category": "bypass",
+      "title": "Parser/catalog differential: missing table denies",
+      "ownerTest": "Sav.Security.Tests.Bypass.ParserCatalogDifferentialTests.Each_differential_seed_denies_when_parser_and_catalog_disagree",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "diff-renamed-relation",
+      "wave": 2,
+      "severity": "High",
+      "category": "bypass",
+      "title": "Parser/catalog differential: renamed relation denies",
+      "ownerTest": "Sav.Security.Tests.Bypass.ParserCatalogDifferentialTests.Each_differential_seed_denies_when_parser_and_catalog_disagree",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "diff-cte-base-missing",
+      "wave": 2,
+      "severity": "High",
+      "category": "bypass",
+      "title": "Parser/catalog differential: CTE base missing denies",
+      "ownerTest": "Sav.Security.Tests.Bypass.ParserCatalogDifferentialTests.Each_differential_seed_denies_when_parser_and_catalog_disagree",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "diff-subquery-missing",
+      "wave": 2,
+      "severity": "High",
+      "category": "bypass",
+      "title": "Parser/catalog differential: subquery missing denies",
+      "ownerTest": "Sav.Security.Tests.Bypass.ParserCatalogDifferentialTests.Each_differential_seed_denies_when_parser_and_catalog_disagree",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "diff-write-target-missing",
+      "wave": 2,
+      "severity": "High",
+      "category": "bypass",
+      "title": "Parser/catalog differential: write target missing denies",
+      "ownerTest": "Sav.Security.Tests.Bypass.ParserCatalogDifferentialTests.Each_differential_seed_denies_when_parser_and_catalog_disagree",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "pg_read_file_deny",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "pg_read_file-style function denied by oracle boundary",
+      "ownerTest": "Sav.Security.Tests.Bypass.OracleSqlBoundaryBypassTests.Rejects_pg_read_file_style_function",
+      "expectedOutcome": "deny"
+    },
+    {
+      "id": "oracle_builtin_allowlist_excludes_dangerous",
+      "wave": 2,
+      "severity": "Critical",
+      "category": "bypass",
+      "title": "Dangerous functions absent from OracleWrapperBuiltinFunctionAllowList",
+      "ownerTest": "Sav.Security.Tests.Bypass.OracleBuiltinAllowListExclusionTests.Dangerous_functions_are_absent_from_oracle_wrapper_builtin_allow_list",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "full_missing_hmac_refuses_startup",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "host",
+      "title": "Sav:Mode=Full missing HMAC refuses startup",
+      "ownerTest": "Sav.Host.Tests.Composition.FullRequiresHmacKeyTests.Missing_hmac_key_throws_attestation_hmac_key_missing",
+      "expectedOutcome": "refuse"
+    },
+    {
+      "id": "analyze_only_starts_without_hmac",
+      "wave": 3,
+      "severity": "High",
+      "category": "host",
+      "title": "AnalyzeOnly starts without HMAC key",
+      "ownerTest": "Sav.Host.Tests.Composition.HostProfileRegistrationAnalyzeOnlyTests.AnalyzeOnly_registers_profile_services",
+      "expectedOutcome": "pass"
+    },
+    {
+      "id": "analyze_only_tools_exclude_verify_and_get",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "host",
+      "title": "AnalyzeOnly DI and MCP tools exclude verify_* and get_attestation",
+      "ownerTest": "Sav.Host.Tests.Composition.AnalyzeOnlyDoesNotResolveVerifyOrAttestationStoreTests.AnalyzeOnly_does_not_resolve_verify_get_or_store_ports",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "no_passthrough_redactor_host_di",
+      "wave": 3,
+      "severity": "High",
+      "category": "host",
+      "title": "Host DI never registers PassThrough redactor",
+      "ownerTest": "Sav.Host.Tests.Composition.NoPassThroughRedactorInHostDiTests.AnalyzeOnly_IRedactor_is_not_PassThrough_and_has_no_Extensions_types",
+      "expectedOutcome": "absent"
+    },
+    {
+      "id": "egress_analyze_sql_host_di",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "AnalyzeSqlResponse via host DI passes RedactObject",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectMvpATests.AnalyzeSqlResponse_via_host_di_calls_RedactObject",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_verify_query_host_di",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "VerifyQueryResponse via host DI passes RedactObject",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectMvpATests.VerifyQueryResponse_via_host_di_calls_RedactObject",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_get_attestation_host_di",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "GetAttestation via host DI passes RedactObject",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectMvpATests.GetAttestation_via_host_di_calls_RedactObject",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_cli_analyze",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "CLI analyze stdout JSON is redacted",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectMvpATests.Cli_analyze_stdout_json_is_redacted",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_cli_verify_and_get",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "CLI verify-query and attestation get stdout JSON are redacted",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectMvpATests.Cli_verify_query_and_attestation_get_stdout_json_are_redacted",
+      "expectedOutcome": "redact"
+    },
+    {
+      "id": "egress_mcp_mvp_a",
+      "wave": 3,
+      "severity": "Critical",
+      "category": "egress",
+      "title": "MCP analyze/verify/get JSON are redacted",
+      "ownerTest": "Sav.Security.Tests.Surface.AllEgressPathsRedactObjectMvpATests.Mcp_analyze_verify_and_get_json_are_redacted",
+      "expectedOutcome": "redact"
+    }
+  ]
+}

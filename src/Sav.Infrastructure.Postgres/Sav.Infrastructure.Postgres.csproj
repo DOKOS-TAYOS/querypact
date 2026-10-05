@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="pgsqlparser" />
+    <PackageReference Include="Npgsql" />
+    <PackageReference Include="Testcontainers.PostgreSql" />
+    <ProjectReference Include="..\Sav.Application\Sav.Application.csproj" />
+    <ProjectReference Include="..\Sav.Domain\Sav.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Sav.Infrastructure.Postgres.Tests" />
+    <InternalsVisibleTo Include="Sav.Security.Tests" />
+    <InternalsVisibleTo Include="Sav.Host.Tests" />
+  </ItemGroup>
+  <Import Project="..\..\build\NativeLibPgQuery.props" />
+</Project>

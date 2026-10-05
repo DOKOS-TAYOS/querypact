@@ -1,0 +1,20 @@
+id: mvp-b-schema-orphans
+version: "1"
+requiredProperties:
+  - name: schema_invariant
+    requirements:
+      - relationName: orders
+        relkind: r
+      - relationName: order_items
+        relkind: r
+  - name: no_new_orphans
+    parentTable: orders
+    parentKey: id
+    childTable: order_items
+    childKey: order_id
+disclosure:
+  name: strict
+  includePlanSummary: false
+  includeObjectNames: false
+  includeTimings: false
+  includeRowCounts: false

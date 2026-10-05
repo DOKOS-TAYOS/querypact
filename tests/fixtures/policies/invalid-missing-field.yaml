@@ -1,0 +1,17 @@
+id: demo-policy
+version: "1"
+allowedStatementTypes:
+  - Select
+deniedTables: []
+deniedColumns: []
+allowedFunctions: []
+denyUnresolvedObjects: true
+denyMultipleStatements: true
+denyUpdateDeleteWithoutPredicate: true
+forbiddenPlanNodes: []
+disclosure:
+  name: strict
+  includePlanSummary: false
+  includeObjectNames: false
+  includeTimings: false
+  includeRowCounts: false

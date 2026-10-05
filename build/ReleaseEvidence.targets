@@ -1,0 +1,16 @@
+<Project>
+  <!-- Opt-in only: capture the inputs used by this invocation, not a previous drop. -->
+  <Target Name="CaptureSavReleaseEvidence" AfterTargets="GenerateSingleFileBundle"
+          Condition="'$(SavReleaseEvidenceDir)' != '' and '$(MSBuildProjectName)' == 'Sav.Host'">
+    <Error Condition="'$(RuntimeIdentifier)' != 'win-x64' or '$(SelfContained)' != 'true' or '$(PublishSingleFile)' != 'true' or '$(IncludeNativeLibrariesForSelfExtract)' != 'true'"
+           Text="Release evidence requires the win-x64 self-contained single-file profile." />
+    <MakeDir Directories="$(SavReleaseEvidenceDir)" />
+    <WriteLinesToFile File="$(SavReleaseEvidenceDir)/packs.tsv" Overwrite="true" Encoding="UTF-8"
+                      Lines="@(ResolvedRuntimePack->'%(NuGetPackageId)|%(NuGetPackageVersion)|%(PackageDirectory)')" />
+    <WriteLinesToFile File="$(SavReleaseEvidenceDir)/bundle.tsv" Overwrite="true" Encoding="UTF-8"
+                      Lines="@(FilesToBundle->'%(FullPath)|%(RelativePath)')" />
+    <WriteLinesToFile File="$(SavReleaseEvidenceDir)/excluded.tsv" Overwrite="true" Encoding="UTF-8"
+                      Lines="@(_FilesExcludedFromBundle->'%(FullPath)|%(RelativePath)')" />
+    <Copy SourceFiles="$(ProjectAssetsFile)" DestinationFiles="$(SavReleaseEvidenceDir)/project.assets.json" />
+  </Target>
+</Project>

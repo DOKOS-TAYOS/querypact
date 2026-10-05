@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "id": "diff-missing-table",
+      "sql": "SELECT id FROM missing_table_xyz",
+      "parserClaims": ["missing_table_xyz"],
+      "catalogOutcome": "missing",
+      "catalogNames": []
+    },
+    {
+      "id": "diff-renamed-relation",
+      "sql": "SELECT id FROM users",
+      "parserClaims": ["users"],
+      "catalogOutcome": "different",
+      "catalogNames": ["accounts"]
+    },
+    {
+      "id": "diff-cte-base-missing",
+      "sql": "WITH cte AS (SELECT id FROM ghost_orders) SELECT id FROM cte",
+      "parserClaims": ["ghost_orders"],
+      "catalogOutcome": "missing",
+      "catalogNames": []
+    },
+    {
+      "id": "diff-subquery-missing",
+      "sql": "SELECT id FROM users WHERE id IN (SELECT user_id FROM absent_payments)",
+      "parserClaims": ["users", "absent_payments"],
+      "catalogOutcome": "missing",
+      "catalogNames": ["users"]
+    },
+    {
+      "id": "diff-write-target-missing",
+      "sql": "INSERT INTO phantom_users (id) VALUES (1)",
+      "parserClaims": ["phantom_users"],
+      "catalogOutcome": "missing",
+      "catalogNames": []
+    },
+    {
+      "id": "diff-schema-qualified-mismatch",
+      "sql": "SELECT id FROM app.users",
+      "parserClaims": ["app.users"],
+      "catalogOutcome": "different",
+      "catalogNames": ["public.users"]
+    }
+  ]
+}

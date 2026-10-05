@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "QueryPact"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Mata Ali
+    given-names: Alejandro
+    email: alejandro.mata.ali@gmail.com
+repository-code: "https://github.com/DOKOS-TAYOS/querypact"
+url: "https://github.com/DOKOS-TAYOS/querypact"
+abstract: >-
+  QueryPact verifies PostgreSQL SQL and migrations proposed by automated clients.
+  It parses SQL, applies YAML policy, optionally runs controlled checks against
+  operator-chosen aliases, redacts egress, and returns structured decisions or
+  attestations without real row payloads in responses, strict logs, or attestation bodies.
+keywords:
+  - sql
+  - postgresql
+  - verification
+  - ai-agents
+  - mcp
+  - security
+  - policy
+license: MIT
+version: "0.1.0-alpha.0"
+contact:
+  - family-names: Mata Ali
+    given-names: Alejandro
+    email: alejandro.mata.ali@gmail.com

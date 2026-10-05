@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <InternalsVisibleTo Include="Sav.Infrastructure.Config.Tests" />
+    <PackageReference Include="YamlDotNet" />
+    <ProjectReference Include="..\Sav.Application\Sav.Application.csproj" />
+    <ProjectReference Include="..\Sav.Domain\Sav.Domain.csproj" />
+  </ItemGroup>
+</Project>

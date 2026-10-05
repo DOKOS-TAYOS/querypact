@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-25",
+  "decision": {
+    "chosenPackage": "pgsqlparser",
+    "chosenVersion": "1.0.0",
+    "packagingProfile": 1,
+    "artifactClassTarget": "SQL-capable",
+    "runnerUp": {
+      "package": "PostgresQuery",
+      "version": "0.1.4",
+      "sufficient": true,
+      "notChosenBecause": "Tie-break: weaker fail-closed API, no Deparse, 0.1.x + Windows-untested disclaimer"
+    }
+  },
+  "candidates": {
+    "pgsqlparser": {
+      "version": "1.0.0",
+      "license": "MIT",
+      "nativeWin": "runtimes/win-x64/native/libpg_query.dll",
+      "nativeLinux": "runtimes/linux-x64/native/libpg_query.so",
+      "cases": {
+        "P01": "PASS",
+        "P02": "PASS",
+        "P03": "PASS",
+        "P04": "PASS",
+        "P05": "PASS",
+        "P06": "PASS",
+        "P07": "PASS",
+        "P08": "PASS",
+        "P09": "PASS",
+        "P10": "PASS",
+        "P11": "PASS",
+        "P12": "PASS",
+        "P13": "PASS",
+        "P14": "PASS",
+        "P15": "PASS"
+      },
+      "profile1": { "publishExit": 0, "runExit": 0 },
+      "profile2": { "publishExit": 0, "runExit": 0 }
+    },
+    "PostgresQuery": {
+      "version": "0.1.4",
+      "license": "BSD-3-Clause",
+      "nativeWin": "runtimes/win-x64/native/pg_query.dll",
+      "nativeLinux": "runtimes/linux-x64/native/libpg_query.so",
+      "cases": {
+        "P01": "PASS",
+        "P02": "PASS",
+        "P03": "PASS",
+        "P04": "PASS",
+        "P05": "PASS",
+        "P06": "PASS",
+        "P07": "PASS",
+        "P08": "PASS",
+        "P09": "PASS",
+        "P10": "PASS",
+        "P11": "PASS",
+        "P12": "PASS",
+        "P13": "PASS",
+        "P14": "PASS",
+        "P15": "PASS"
+      },
+      "profile1": { "publishExit": 0, "runExit": 0 },
+      "profile2": { "publishExit": 0, "runExit": 0 }
+    }
+  },
+  "environment": {
+    "sdk": "10.0.302",
+    "tfm": "net10.0",
+    "p14Note": "WSL run required DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1 due to missing libicu; native libpg_query loaded"
+  }
+}
